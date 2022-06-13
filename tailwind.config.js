@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{html,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      transition1: "0.5s ease-in-out",
+      maxWidth: {
+        'mxCInfo': "calc(100% - 46px)",
+      }
+    },
   },
   plugins: [],
 }

@@ -32,23 +32,113 @@
 
 
 </head>
-<body>
+<body class="bg-neutral-900 text-white ">
     <main>
-        <aside>
+    <nav class="container overflow-hidden mt-10 mx-auto bg-stone-800 border border-stone-700 rounded-lg">
+        <div class="flex justify-start gap-3.5 relative items-center p-4">
+            <figure class="bg-zinc-600 rounded-3xl pt-2 px-1">
+                <embed src="./assets/coding nobg.png" alt="logo" class="w-40">
+            </figure>
 
-        </aside>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+            <div>
+                
+                <h1 class="font-bold text-2xl py-2" title="John Andres">John Andres</h1>
+                
+                <p class="font-normal text-lg" title="Junior Fullstack Developer">Junior Fullstack Developer</p>
+            </div>
+        
+            <button class="absolute top-0 right-0 p-2.5 bg-neutral-500 rounded-bl-lg hover:bg-yellow-500 z-10">
+                <span>Show Details</span>
+
+                <ion-icon name="chevron-down"></ion-icon>
+                
+            </button>
+            
+        </div>
+        
+        <!-- Contact Info Container -->
+        <div class="visible transition1 mt-2">
+            <!-- Seperator -->
+            <div class="w-full h-px bg-black mx-4"></div>
+
+            <ul class="grid grid-cols-1 gap-4">
+                <!-- Email -->
+                <li class="min-w-full flex items-center gap-4">
+
+                    <!-- Contact info icon -->
+                    <div class="relative w-8 h-8 rounded-lg flex justify-center items-center text-base">
+                        <img src="./assets/icons/email.svg" alt="email" class="w-full h-full">
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="text-sm max-w-mxCInfo">
+                        <p class="text-lg font-bold uppercase text-gray-600">Email</p>
+
+                        <a href="mailto:test@email.com">test@email.com</a>
+                    </div>
+                </li>
+
+                <!-- Phone -->
+                <li class="min-w-full flex items-center gap-4">
+
+                    <!-- Contact info icon -->
+                    <div class="relative w-8 h-8 rounded-lg flex justify-center items-center text-base">
+                        <img src="./assets/icons/phone.svg" alt="email" class="w-full h-full">
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="text-sm max-w-mxCInfo">
+                        <p class="text-lg font-bold uppercase text-gray-600">Phone Number</p>
+
+                        <a href="tel:+32491881117">+32 491 88 11 17</a>
+                    </div>
+                </li>
+
+                 <!-- Location -->
+                 <li class="min-w-full flex items-center gap-4">
+
+                    <!-- Contact info icon -->
+                    <div class="relative w-8 h-8 rounded-lg flex justify-center items-center text-base">
+                        <img src="./assets/icons/location.svg" alt="email" class="w-full h-full">
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="text-sm max-w-mxCInfo">
+                        <p class="text-lg font-bold uppercase text-gray-600">Location</p>
+
+                        <address>Brussels, Belgium</address>
+                    </div>
+                </li>
+
+                 <!-- Quote -->
+                 <li class="min-w-full flex items-center gap-4">
+
+                    <!-- Contact info icon -->
+                    <div class="relative w-8 h-8 rounded-lg flex justify-center items-center text-base">
+                        <img src="./assets/icons/reader.svg" alt="email" class="w-full h-full">
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="text-sm max-w-mxCInfo">
+                        <p class="text-lg font-bold uppercase text-gray-600">Quotes</p>
+
+                        <p>“The present is theirs; the future, for which I really worked, is mine.”
+                            ― Nikola Tesla</p>
+                    </div>
+                </li>
+
+            </ul>
+            
+        </div>
+        
+    </nav>
+    
 
     </main>
 
     <!--- app.js link-->
     <script type="module" src="app.js"></script>
 
-    <!--- ionicon link-->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>
